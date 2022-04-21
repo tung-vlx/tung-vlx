@@ -25,7 +25,18 @@
   cursor: pointer;
 }
 
-
+.alert_noti {
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 9999;
+}
+.alert_noti_inner {
+  width: 50rem;
+  height: 20rem;
+}
 
 .hide {
   visibility: hidden;

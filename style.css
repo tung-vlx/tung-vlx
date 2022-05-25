@@ -4,18 +4,115 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --color1: #ffd154;
+  --color2: #002795;
+}
 body {
 
 }
-.jobs-box {
+.navigation-box {
   position: absolute;
   display: block;
-  top: 20%;
-  left: 0%;
+  top: 0px;
+  right: 0px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 7px;
+}
+.navigation-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.navigation-item span{
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  transition: 0.5s;
+}
+.navigation-item:hover {
+  background-color: var(--color2);
+  border: 3px solid white;
+  color: white;
+}
+.navigation-item:hover > span {
+  color: white;
+}
+.navigation-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--color1);
+  z-index: 0;
+  border-bottom-left-radius: 30px;
+}
+.navigation-box .curve {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--color1);
+  z-index: 1;
+}
+.navigation-box .left-curve {
+  box-shadow: 10px 10px white;
+  transform: translate(6%,-50%);
+}
+.navigation-box .right-curve {
+  box-shadow: -10px 10px white;
+  transform: translate(-6%,-50%);
+}
+.personal-information-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 200px;;
+  grid-gap: 10px;
+  width: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 5px 7px;
+  overflow: hidden;
+}
+.avatar-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-box img {
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+.information-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.jobs-box {
+  position: relative;
+  display: block;
   margin: 0 60px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);
+  grid-gap: 10px;
 }
 .job-item {
   display: flex;
@@ -24,7 +121,7 @@ body {
   flex-direction: column;
   margin: 5px 7px;
   padding: 5px 7px;
-  background-color: #ffd154;
+  background-color: var(--color1);
   border-radius: 10px;
 }
 .job-item img {
@@ -38,7 +135,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
-  color: #002795;
+  color: var(--color2);
   padding: 5px 7px;
   border-radius: 5px;
   transition: 0.5s;

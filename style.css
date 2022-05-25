@@ -16,7 +16,7 @@ body {
   display: block;
   top: 0px;
   right: 0px;
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,12 +103,62 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  border: 2px solid var(--color2);
+  border-radius: 7px;
+  margin: 35px 20px;
+}
+.information-box h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.information-item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.information-item {
+  padding: 0 5px;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information-item-box i {
+  color: var(--color2);
+  padding: 5px;
+  margin: 0 5px;
+  background-color: var(--color1);
+  border-radius: 50%;
+}
+.page-title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 100px;
+  color: var(--color2);
+  cursor: default;
+}
+.page-title h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.page-title p {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 60%;
 }
 .jobs-box {
   position: relative;
   display: block;
-  margin: 0 60px;
+  margin: 0 100px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 350px);

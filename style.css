@@ -18,7 +18,6 @@ body {
   display: block;
   top: 0px;
   right: 0px;
-  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,11 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
   z-index: 2;
-  background-color: white;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -43,23 +38,14 @@ body {
   color: black;
   transition: 0.5s;
 }
-.navigation-item:hover {
-  background-color: var(--color2);
-  border: 3px solid white;
-  color: white;
-}
-.navigation-item:hover > span {
-  color: white;
-}
+
 .navigation-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
   background-color: var(--color1);
   z-index: 0;
-  border-bottom-left-radius: 30px;
 }
 .navigation-box .curve {
   height: 20px;
@@ -226,7 +212,6 @@ body {
   position:relative;
   display: block;
 }
-
 .resume-item h1 {
   font-size: 36px;
   font-weight: 900;
@@ -269,6 +254,31 @@ body {
   opacity: 60%;
 }
 @media screen and (min-width: 992px) {
+  .navigation-box {
+    width: 25%;
+  }
+  .navigation-item {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .navigation-item i {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .navigation-background {
+    height: 50%;
+    border-bottom-left-radius: 30px;
+  }
+  .navigation-item:hover {
+    background-color: var(--color2);
+    border: 3px solid white;
+    color: white;
+  }
+  .navigation-item:hover > span {
+    color: white;
+  }
   .personal-information-box {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -290,6 +300,47 @@ body {
     padding: 10px 15px;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .navigation-box {
+    width: 10%;
+  }
+  .navigation-item {
+    margin-left: 2px;
+  }
+  .navigation-item span{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--color2);
+  }
+  .navigation-item:hover > span {
+    transform: scale(1.08);
+  }
+  .navigation-background {
+    height: 100%;
+    border-bottom-left-radius: 20px;
+  }
+  .navigation-box .curve {
+    opacity: 0%;
+    visibility: hidden;
+  }
+  .personal-information-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resume-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+  .resume-left-box {
+    padding-top: 10px;
+  }
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -311,20 +362,4 @@ footer .download-cv {
 footer .download-cv:hover {
   opacity: 80%;
   transform: scale(1.08);
-}
-@media screen and (max-width: 991px) {
-  .personal-information-box {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .resume-box {
-    display: flex;
-    flex-direction: column;
-    margin: 0 50px;
-  }
-  .resume-left-box {
-    padding-top: 10px;
-  }
 }

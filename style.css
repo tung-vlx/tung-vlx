@@ -13,11 +13,6 @@
 body {
 
 }
-footer {
-  padding: 7px 10px;
-  font-size: 14px;
-  opacity: 0%;
-}
 .navigation-box {
   position: absolute;
   display: block;
@@ -294,6 +289,28 @@ footer {
   .resume-right-box {
     padding: 10px 15px;
   }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+footer .download-cv {
+  padding: 7px 10px;
+  width: fit-content;
+  color: var(--color2);
+  background-color: var(--color1);
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer .download-cv:hover {
+  opacity: 80%;
+  transform: scale(1.08);
 }
 @media screen and (max-width: 991px) {
   .personal-information-box {

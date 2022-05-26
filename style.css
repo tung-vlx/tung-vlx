@@ -75,11 +75,11 @@ footer {
 }
 .navigation-box .left-curve {
   box-shadow: 10px 10px white;
-  transform: translate(7%,-53%);
+  transform: translate(9%,-50%);
 }
 .navigation-box .right-curve {
   box-shadow: -10px 10px white;
-  transform: translate(-7%,-53%);
+  transform: translate(-9%,-50%);
 }
 .personal-information-box {
   position: relative;

@@ -6,3 +6,7 @@ var downloadChannelDevelopmentAssistant = document.querySelector("#downloadChann
 downloadChannelDevelopmentAssistant.addEventListener('click', function() {
   window.location="resources/[Channel Development Assistant] Võ Lê Xuân Tùng.pdf";
 })
+var downloadCustomerServiceRepresentative = document.querySelector("#downloadCustomerServiceRepresentative");
+downloadCustomerServiceRepresentative.addEventListener('click', function() {
+  window.location="resources/[Customer Service Representation] Võ Lê Xuân Tùng.pdf"
+})

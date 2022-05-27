@@ -303,7 +303,7 @@ body {
 
 @media screen and (max-width: 991px) {
   .navigation-box {
-    width: 10%;
+    width: 20%;
   }
   .navigation-item {
     margin-left: 2px;
